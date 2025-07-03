@@ -1,0 +1,27 @@
+.header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header nav a {
+  color: #61dafb;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .header {
+    padding: 10px;
+  }
+}

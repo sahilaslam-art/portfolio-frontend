@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
