@@ -1,27 +1,26 @@
 .header {
   background-color: #1e1e1e;
-  color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  color: #bb86fc;
 }
 
 .header nav a {
-  color: #61dafb;
-  margin: 0 15px;
+  color: #f0f0f0;
+  margin-left: 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .header nav a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 768px) {
-  .header nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .header {
-    padding: 10px;
-  }
+  color: #bb86fc;
 }

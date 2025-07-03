@@ -1,13 +1,21 @@
 import React from 'react';
 import './About.css';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <section id="about" className="about">
-      <h2>About Me</h2>
-      <p>
-        I'm Sahil Aslam, a passionate frontend developer learning React.js, HTML, CSS, and JavaScript. I love building clean, responsive websites and am working step-by-step to become a MERN stack developer!
-      </p>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h2>About Me</h2>
+        <p>
+          I’m Sahil Aslam, a passionate Frontend Developer focused on building responsive and interactive web experiences. I specialize in HTML, CSS, JavaScript, and React.js, and I love turning designs into reality.
+        </p>
+      </motion.div>
     </section>
   );
 };
