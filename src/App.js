@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import './App.css';
+import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -11,9 +11,12 @@ import Hero from './components/Hero';
 
 
 
+
+
 function App() {
   return (
     <div className="App">
+      
       <Navbar/>
       <Hero/>
       <Header />
@@ -22,6 +25,7 @@ function App() {
       <Contact/>
       <Footer/>
       <ScrollToTop />
+      
       
       
 
